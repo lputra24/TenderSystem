@@ -91,6 +91,17 @@
   <aside class="main-sidebar">
     <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
+      <!-- Sidebar user panel -->
+      <div class="user-panel">
+        <div class="pull-left image">
+          <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+        </div>
+        <div class="pull-left info">
+          <p>Kevin</p>
+          <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+        </div>
+      </div>
+      <!-- search form -->
       <form action="#" method="get" class="sidebar-form">
         <div class="input-group">
           <input type="text" name="q" class="form-control" placeholder="Search...">
@@ -100,18 +111,18 @@
               </span>
         </div>
       </form>
-      <!-- /.search form -->
-      <!-- sidebar menu: : style can be found in sidebar.less -->
+
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">MAIN NAVIGATION</li>
-        <li class="active treeview">
-          <a href="index.html"><span>Dashboard</span>
-            </span>
+
+        <li>
+          <a href="index.html">
+            <span>Dashboard</span>
           </a>
         </li>
 
 
-        <li class="treeview">
+        <li class="active treeview">
           <a href="#">
             <span>Area</span>
             <span class="pull-right-container">
@@ -119,7 +130,7 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="createProvinsi.html"><i class="fa fa-circle-o"></i>Create State</a></li>
+            <li class = "active treeview"><a href="#"><i class="fa fa-circle-o"></i>Create State</a></li>
             <li><a href="createKota.html"><i class="fa fa-circle-o"></i> Create Area</a></li>
             <li><a href="viewArea.html"><i class="fa fa-circle-o"></i>View State and Area</a></li>
           </ul>
@@ -134,10 +145,10 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="category/createCategory.php"><i class="fa fa-circle-o"></i>Create Category</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i> Create Sub-Category</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i>Create Brand</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i>View Category</a></li>
+            <li><a href="createCategory.php"><i class="fa fa-circle-o"></i>Create Category</a></li>
+            <li><a href="createSub.php"><i class="fa fa-circle-o"></i> Create Sub-Category</a></li>
+            <li><a href="createBrand.php"><i class="fa fa-circle-o"></i>Create Brand</a></li>
+            <li><a href="viewCategory.php"><i class="fa fa-circle-o"></i>View Category</a></li>
           </ul>
         </li>
 
@@ -150,9 +161,9 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="#"><i class="fa fa-circle-o"></i>Create Supplier</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i> Create Branch</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i>View Supplier</a></li>
+            <li><a href="createSupp.php"><i class="fa fa-circle-o"></i>Create Supplier</a></li>
+            <li><a href="createBranch.php"><i class="fa fa-circle-o"></i> Create Branch</a></li>
+            <li><a href="viewSupp.php"><i class="fa fa-circle-o"></i>View Supplier</a></li>
           </ul>
         </li>
 
@@ -165,8 +176,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="#"><i class="fa fa-circle-o"></i>Create Company</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i>View Company</a></li>
+            <li><a href="createCom.php"><i class="fa fa-circle-o"></i>Create Company</a></li>
+            <li><a href="viewCom.php"><i class="fa fa-circle-o"></i>View Company</a></li>
           </ul>
         </li>
 
@@ -188,13 +199,13 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="#"><i class="fa fa-circle-o"></i>Birthday</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i>Language Editor</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i>Messenger</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i>Error log</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i>Request log</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i>PHP log</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i>Message log</a></li>
+            <li><a href="birth.php"><i class="fa fa-circle-o"></i>Birthday</a></li>
+            <li><a href="lang.php"><i class="fa fa-circle-o"></i>Language Editor</a></li>
+            <li><a href="mess.php"><i class="fa fa-circle-o"></i>Messenger</a></li>
+            <li><a href="err.php"><i class="fa fa-circle-o"></i>Error log</a></li>
+            <li><a href="req.php"><i class="fa fa-circle-o"></i>Request log</a></li>
+            <li><a href="ph.php"><i class="fa fa-circle-o"></i>PHP log</a></li>
+            <li><a href="messa.php"><i class="fa fa-circle-o"></i>Message log</a></li>
           </ul>
         </li>
       </ul>
@@ -207,84 +218,16 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Dashboard
-        <small>Control panel</small>
+        <b>AREA</b>
+        <small>Create State</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
         <li class="active">Dashboard</li>
       </ol>
     </section>
-
-
-    <section class="content">
-      <!-- Small boxes (Stat box) -->
-      <div class="row">
-        <div class="col-lg-3 col-xs-6">
-          <!-- small box -->
-          <div class="small-box bg-aqua">
-            <div class="inner">
-              <h3>150</h3>
-
-              <p>Request</p>
-            </div>
-            <div class="icon">
-              <i class="ion ion-bag"></i>
-            </div>
-            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-          </div>
-        </div>
-        <!-- ./col -->
-        <div class="col-lg-3 col-xs-6">
-          <!-- small box -->
-          <div class="small-box bg-green">
-            <div class="inner">
-              <h3>53<sup style="font-size: 20px">%</sup></h3>
-
-              <p>Bounce Rate</p>
-            </div>
-            <div class="icon">
-              <i class="ion ion-stats-bars"></i>
-            </div>
-            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-          </div>
-        </div>
-        <!-- ./col -->
-        <div class="col-lg-3 col-xs-6">
-          <!-- small box -->
-          <div class="small-box bg-yellow">
-            <div class="inner">
-              <h3>44</h3>
-
-              <p>User Registrations</p>
-            </div>
-            <div class="icon">
-              <i class="ion ion-person-add"></i>
-            </div>
-            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-          </div>
-        </div>
-        <!-- ./col -->
-        <div class="col-lg-3 col-xs-6">
-          <!-- small box -->
-          <div class="small-box bg-red">
-            <div class="inner">
-              <h3>65</h3>
-
-              <p>Unique Visitors</p>
-            </div>
-            <div class="icon">
-              <i class="ion ion-pie-graph"></i>
-            </div>
-            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-          </div>
-        </div>
-        <!-- ./col -->
-      </div>
-  </section>
-</div>
-
-
+  </div>
+  <!-- /.content-wrapper -->
   <footer class="main-footer">
     <div class="pull-right hidden-xs">
       <b>Version</b> 2.4.0
@@ -292,15 +235,6 @@
     <strong>Copyright &copy; 2014-2016 <a href="https://adminlte.io">Almsaeed Studio</a>.</strong> All rights
     reserved.
   </footer>
-
-  <!-- Control Sidebar -->
-  <aside class="control-sidebar control-sidebar-dark">
-    <!-- Create the tabs -->
-    <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
-      <li><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
-      <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
-    </ul>
-  </aside>
   <!-- /.control-sidebar -->
   <!-- Add the sidebar's background. This div must be placed
        immediately after the control sidebar -->
