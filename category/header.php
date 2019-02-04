@@ -27,10 +27,6 @@
   <link rel="stylesheet" href="bower_components/bootstrap-daterangepicker/daterangepicker.css">
   <!-- bootstrap wysihtml5 - text editor -->
   <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
-  <link rel="stylesheet" href="bower_components/select2/dist/css/select2.min.css">
-
-
-
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -95,17 +91,6 @@
   <aside class="main-sidebar">
     <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
-      <!-- Sidebar user panel -->
-      <div class="user-panel">
-        <div class="pull-left image">
-          <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
-        </div>
-        <div class="pull-left info">
-          <p>Kevin</p>
-          <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
-        </div>
-      </div>
-      <!-- search form -->
       <form action="#" method="get" class="sidebar-form">
         <div class="input-group">
           <input type="text" name="q" class="form-control" placeholder="Search...">
@@ -115,18 +100,18 @@
               </span>
         </div>
       </form>
-
+      <!-- /.search form -->
+      <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">MAIN NAVIGATION</li>
-
-        <li>
-          <a href="index.html">
-            <span>Dashboard</span>
+        <li class="active treeview">
+          <a href="index.html"><span>Dashboard</span>
+            </span>
           </a>
         </li>
 
 
-        <li class="active treeview">
+        <li class="treeview">
           <a href="#">
             <span>Area</span>
             <span class="pull-right-container">
@@ -134,7 +119,7 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class = "active treeview"><a href="#"><i class="fa fa-circle-o"></i>Create State</a></li>
+            <li><a href="createProvinsi.html"><i class="fa fa-circle-o"></i>Create State</a></li>
             <li><a href="createKota.html"><i class="fa fa-circle-o"></i> Create Area</a></li>
             <li><a href="viewArea.html"><i class="fa fa-circle-o"></i>View State and Area</a></li>
           </ul>
@@ -149,10 +134,10 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="#"><i class="fa fa-circle-o"></i>Create Category</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i> Create Sub-Category</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i>Create Brand</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i>View Category</a></li>
+            <li><a href="createCategory.html"><i class="fa fa-circle-o"></i>Create Category</a></li>
+            <li><a href="createSub.html"><i class="fa fa-circle-o"></i> Create Sub-Category</a></li>
+            <li><a href="createBrand.html"><i class="fa fa-circle-o"></i>Create Brand</a></li>
+            <li><a href="viewCategory.html"><i class="fa fa-circle-o"></i>View Category</a></li>
           </ul>
         </li>
 
@@ -220,69 +205,25 @@
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
-    <section class="content-header">
-      <h1>
-        <b>AREA</b>
-        <small>Create State</small>
-      </h1>
-      <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Dashboard</li>
-      </ol>
-    </section>
 
 
 
     <section class="content">
+      <!-- Small boxes (Stat box) -->
+      <div class="row">
 
+        <!-- ./col -->
 
-      <div class="box box-default">
-        <div class="box-header with-border">
-          <h3 class="box-title">Create State</h3>
+        <!-- ./col -->
 
-          <div class="box-tools pull-right">
-            <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
-            <!-- <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-remove"></i></button> -->
-          </div>
-        </div>
-        <!-- /.box-header -->
-        <div class="box-body">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="form-group">
-                <label>State</label>
-                <select class="form-control select2" multiple="multiple" data-placeholder="Select a State"
-                        style="width: 100%;">
-                  <option>Jakarta</option>
-                  <option>Jawa Barat</option>
-                  <option>Jawa Tengah</option>
-                  <option>Jawa Timur</option>
-                  <option>Sumatera Utara</option>
-                  <option>Sumatera Selatan</option>
-                  <option>Papua </option>
-                </select>
-              </div>
-            </div>
-          </div>
-        </div>
-        <td>
-          <button type="button" class="btn btn-block btn-default btn-lg">Default</button>
-        </td>
+        <!-- ./col -->
+        
+        <!-- ./col -->
       </div>
+  </section>
+</div>
 
 
-
-
-
-
-
-
-
-
-
-    </section>
-  </div>
-  <!-- /.content-wrapper -->
   <footer class="main-footer">
     <div class="pull-right hidden-xs">
       <b>Version</b> 2.4.0
@@ -290,6 +231,15 @@
     <strong>Copyright &copy; 2014-2016 <a href="https://adminlte.io">Almsaeed Studio</a>.</strong> All rights
     reserved.
   </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Create the tabs -->
+    <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+      <li><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
+      <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
+    </ul>
+  </aside>
   <!-- /.control-sidebar -->
   <!-- Add the sidebar's background. This div must be placed
        immediately after the control sidebar -->
@@ -307,8 +257,6 @@
 </script>
 <!-- Bootstrap 3.3.7 -->
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-
-<script src="bower_components/select2/dist/js/select2.full.min.js"></script>
 <!-- Morris.js charts -->
 <script src="bower_components/raphael/raphael.min.js"></script>
 <script src="bower_components/morris.js/morris.min.js"></script>
@@ -336,15 +284,5 @@
 <script src="dist/js/pages/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="dist/js/demo.js"></script>
-<script>
-  $(function () {
-    //Initialize Select2 Elements
-    $('.select2').select2()
-    //Date picker
-    $('#datepicker').datepicker({
-      autoclose: true
-    })
-  })
-</script>
 </body>
 </html>

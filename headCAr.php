@@ -27,10 +27,6 @@
   <link rel="stylesheet" href="bower_components/bootstrap-daterangepicker/daterangepicker.css">
   <!-- bootstrap wysihtml5 - text editor -->
   <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
-  <link rel="stylesheet" href="bower_components/select2/dist/css/select2.min.css">
-
-
-
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -149,10 +145,10 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="#"><i class="fa fa-circle-o"></i>Create Category</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i> Create Sub-Category</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i>Create Brand</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i>View Category</a></li>
+            <li><a href="createCategory.php"><i class="fa fa-circle-o"></i>Create Category</a></li>
+            <li><a href="createSub.php"><i class="fa fa-circle-o"></i> Create Sub-Category</a></li>
+            <li><a href="createBrand.php"><i class="fa fa-circle-o"></i>Create Brand</a></li>
+            <li><a href="viewCategory.php"><i class="fa fa-circle-o"></i>View Category</a></li>
           </ul>
         </li>
 
@@ -165,9 +161,9 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="#"><i class="fa fa-circle-o"></i>Create Supplier</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i> Create Branch</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i>View Supplier</a></li>
+            <li><a href="createSupp.php"><i class="fa fa-circle-o"></i>Create Supplier</a></li>
+            <li><a href="createBranch.php"><i class="fa fa-circle-o"></i> Create Branch</a></li>
+            <li><a href="viewSupp.php"><i class="fa fa-circle-o"></i>View Supplier</a></li>
           </ul>
         </li>
 
@@ -180,8 +176,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="#"><i class="fa fa-circle-o"></i>Create Company</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i>View Company</a></li>
+            <li><a href="createCom.php"><i class="fa fa-circle-o"></i>Create Company</a></li>
+            <li><a href="viewCom.php"><i class="fa fa-circle-o"></i>View Company</a></li>
           </ul>
         </li>
 
@@ -203,13 +199,13 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="#"><i class="fa fa-circle-o"></i>Birthday</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i>Language Editor</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i>Messenger</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i>Error log</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i>Request log</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i>PHP log</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i>Message log</a></li>
+            <li><a href="birth.php"><i class="fa fa-circle-o"></i>Birthday</a></li>
+            <li><a href="lang.php"><i class="fa fa-circle-o"></i>Language Editor</a></li>
+            <li><a href="mess.php"><i class="fa fa-circle-o"></i>Messenger</a></li>
+            <li><a href="err.php"><i class="fa fa-circle-o"></i>Error log</a></li>
+            <li><a href="req.php"><i class="fa fa-circle-o"></i>Request log</a></li>
+            <li><a href="ph.php"><i class="fa fa-circle-o"></i>PHP log</a></li>
+            <li><a href="messa.php"><i class="fa fa-circle-o"></i>Message log</a></li>
           </ul>
         </li>
       </ul>
@@ -229,57 +225,6 @@
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
         <li class="active">Dashboard</li>
       </ol>
-    </section>
-
-
-
-    <section class="content">
-
-
-      <div class="box box-default">
-        <div class="box-header with-border">
-          <h3 class="box-title">Create State</h3>
-
-          <div class="box-tools pull-right">
-            <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
-            <!-- <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-remove"></i></button> -->
-          </div>
-        </div>
-        <!-- /.box-header -->
-        <div class="box-body">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="form-group">
-                <label>State</label>
-                <select class="form-control select2" multiple="multiple" data-placeholder="Select a State"
-                        style="width: 100%;">
-                  <option>Jakarta</option>
-                  <option>Jawa Barat</option>
-                  <option>Jawa Tengah</option>
-                  <option>Jawa Timur</option>
-                  <option>Sumatera Utara</option>
-                  <option>Sumatera Selatan</option>
-                  <option>Papua </option>
-                </select>
-              </div>
-            </div>
-          </div>
-        </div>
-        <td>
-          <button type="button" class="btn btn-block btn-default btn-lg">Default</button>
-        </td>
-      </div>
-
-
-
-
-
-
-
-
-
-
-
     </section>
   </div>
   <!-- /.content-wrapper -->
@@ -307,8 +252,6 @@
 </script>
 <!-- Bootstrap 3.3.7 -->
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-
-<script src="bower_components/select2/dist/js/select2.full.min.js"></script>
 <!-- Morris.js charts -->
 <script src="bower_components/raphael/raphael.min.js"></script>
 <script src="bower_components/morris.js/morris.min.js"></script>
@@ -336,15 +279,5 @@
 <script src="dist/js/pages/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="dist/js/demo.js"></script>
-<script>
-  $(function () {
-    //Initialize Select2 Elements
-    $('.select2').select2()
-    //Date picker
-    $('#datepicker').datepicker({
-      autoclose: true
-    })
-  })
-</script>
 </body>
 </html>
