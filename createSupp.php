@@ -3,8 +3,8 @@
   <!-- Content Header (Page header) -->
   <section class="content-header">
     <h1>
-      <b>CATEGORY</b>
-      <small>Create Sub-Category</small>
+      <b>SUPPLIER</b>
+      <small>Create Supplier</small>
     </h1>
     <ol class="breadcrumb">
       <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
@@ -31,10 +31,10 @@
         </form>
       </div>
       <!-- <div class="box-footer clearfix"> -->
-        <button type="button" class="pull-right btn btn-default" id="sendat">Send
+        <button type="button" class="pull-right btn btn-default" id="sendCat">Send
           <i class="fa fa-arrow-circle-right"></i></button>
       <!-- </div> -->
     <!-- </div> -->
   </section>
 </div>
-<?php include_once "headCSub.php" ?>
+<?php include_once "suppSupp.php" ?>
