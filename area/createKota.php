@@ -1,4 +1,5 @@
-<?php include_once "templateArea.php" ?>
+<?php include_once "headerKota.php" ?>
+
 <div class="content-wrapper">
   <!-- Content Header (Page header) -->
   <section class="content-header">
@@ -21,7 +22,7 @@
 
         <div class="box-tools pull-right">
           <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
-          <!-- <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-remove"></i></button> -->
+          <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-remove"></i></button>
         </div>
       </div>
       <!-- /.box-header -->
@@ -29,7 +30,7 @@
         <div class="box-body">
           <div class="form-group">
             <!-- <label for="exampleInputEmail1">Email address</label> -->
-            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="City">
+            <input type="text" class="form-control" id="city" placeholder="City">
           </div>
         </div>
         <!-- /.box-body -->

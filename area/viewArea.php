@@ -1,1 +1,1 @@
-<?php include_once "templateArea.php" ?>
+<?php include_once "headerView.php" ?>

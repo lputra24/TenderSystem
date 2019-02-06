@@ -123,9 +123,9 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="createProvinsi.html"><i class="fa fa-circle-o"></i>Create State</a></li>
-            <li><a href="createKota.html"><i class="fa fa-circle-o"></i> Create Area</a></li>
-            <li><a href="viewArea.html"><i class="fa fa-circle-o"></i>View State and Area</a></li>
+            <li><a href="../area/createProvinsi.php"><i class="fa fa-circle-o"></i>Create State</a></li>
+            <li><a href="../area/createKota.php"><i class="fa fa-circle-o"></i> Create Area</a></li>
+            <li><a href="../area/viewArea.php"><i class="fa fa-circle-o"></i>View State and Area</a></li>
           </ul>
         </li>
 
