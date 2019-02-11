@@ -134,10 +134,10 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="#"><i class="fa fa-circle-o"></i>Create Category</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i> Create Sub-Category</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i>Create Brand</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i>View Category</a></li>
+            <li><a href="category/createCategory.php"><i class="fa fa-circle-o"></i>Create Category</a></li>
+            <li><a href="category/createSub.php"><i class="fa fa-circle-o"></i> Create Sub-Category</a></li>
+            <li><a href="category/createBrand.php"><i class="fa fa-circle-o"></i>Create Brand</a></li>
+            <li><a href="category/viewCategory.php"><i class="fa fa-circle-o"></i>View Category</a></li>
           </ul>
         </li>
 

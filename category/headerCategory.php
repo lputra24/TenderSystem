@@ -31,7 +31,7 @@
 
   <link rel="stylesheet" href="../bower_components/select2/dist/css/select2.min.css">
 
-
+  <link rel="stylesheet" href="../bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
 
 
 
@@ -111,7 +111,7 @@
         </li>
 
 
-        <li class="active treeview">
+        <li class="treeview">
           <a href="#">
             <span>Area</span>
             <span class="pull-right-container">
@@ -119,14 +119,14 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="createProvinsi.php"><i class="fa fa-circle-o"></i>Create State</a></li>
-            <li><a href="createKota.php"><i class="fa fa-circle-o"></i> Create Area</a></li>
-            <li><a href="viewArea.php"><i class="fa fa-circle-o"></i>View State and Area</a></li>
+            <li><a href="../area/createProvinsi.php"><i class="fa fa-circle-o"></i>Create State</a></li>
+            <li><a href="../area/createKota.php"><i class="fa fa-circle-o"></i> Create Area</a></li>
+            <li><a href="../area/viewArea.php"><i class="fa fa-circle-o"></i>View State and Area</a></li>
           </ul>
         </li>
 
 
-        <li class="treeview">
+        <li class="active treeview">
           <a href="#">
             <span>Category</span>
             <span class="pull-right-container">
@@ -134,10 +134,10 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="../category/createCategory.php"><i class="fa fa-circle-o"></i>Create Category</a></li>
-            <li><a href="../category/createSub.php"><i class="fa fa-circle-o"></i> Create Sub-Category</a></li>
-            <li><a href="../category/createBrand.php"><i class="fa fa-circle-o"></i>Create Brand</a></li>
-            <li><a href="../category/viewCategory.php"><i class="fa fa-circle-o"></i>View Category</a></li>
+            <li class="active"><a href="createCategory.php"><i class="fa fa-circle-o"></i>Create Category</a></li>
+            <li ><a href="createSub.php"><i class="fa fa-circle-o"></i> Create Sub-Category</a></li>
+            <li><a href="createBrand.php"><i class="fa fa-circle-o"></i>Create Brand</a></li>
+            <li><a href="viewCategory.php"><i class="fa fa-circle-o"></i>View Category</a></li>
           </ul>
         </li>
 
@@ -201,10 +201,3 @@
     </section>
     <!-- /.sidebar -->
   </aside>
-
-  <!-- <div class="content-wrapper">
-    <section class="content">
-      <div class="row">
-      </div>
-  </section>
-</div> -->
