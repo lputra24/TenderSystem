@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html>
 <head>
   <meta charset="utf-8">
@@ -41,7 +41,7 @@
 
   <header class="main-header">
     <!-- Logo -->
-    <a href="index.html" class="logo">
+    <a href="../dashboard.php" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>TSJ</b></span>
       <!-- logo for regular state and mobile devices -->
@@ -102,14 +102,16 @@
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">MAIN NAVIGATION</li>
-        <li class="active treeview">
-          <a href="index.html"><span>Dashboard</span>
+
+
+        <li>
+          <a href="../dashboard.php"><span>Dashboard</span>
             </span>
           </a>
         </li>
 
 
-        <li class="treeview">
+        <li class="active treeview">
           <a href="#">
             <span>Area</span>
             <span class="pull-right-container">
@@ -117,9 +119,9 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="createProvinsi.html"><i class="fa fa-circle-o"></i>Create State</a></li>
-            <li><a href="createKota.html"><i class="fa fa-circle-o"></i> Create Area</a></li>
-            <li><a href="viewArea.html"><i class="fa fa-circle-o"></i>View State and Area</a></li>
+            <li class="active"><a href="createProvinsi.php"><i class="fa fa-circle-o"></i>Create State</a></li>
+            <li><a href="createKota.php"><i class="fa fa-circle-o"></i> Create Area</a></li>
+            <li><a href="viewArea.php"><i class="fa fa-circle-o"></i>View State and Area</a></li>
           </ul>
         </li>
 
@@ -132,10 +134,10 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="createCategory.html"><i class="fa fa-circle-o"></i>Create Category</a></li>
-            <li><a href="createSub.html"><i class="fa fa-circle-o"></i> Create Sub-Category</a></li>
-            <li><a href="createBrand.html"><i class="fa fa-circle-o"></i>Create Brand</a></li>
-            <li><a href="viewCategory.html"><i class="fa fa-circle-o"></i>View Category</a></li>
+            <li><a href="../category/createCategory.php"><i class="fa fa-circle-o"></i>Create Category</a></li>
+            <li><a href="../category/createSub.php"><i class="fa fa-circle-o"></i> Create Sub-Category</a></li>
+            <li><a href="../category/createBrand.php"><i class="fa fa-circle-o"></i>Create Brand</a></li>
+            <li><a href="../category/viewCategory.php"><i class="fa fa-circle-o"></i>View Category</a></li>
           </ul>
         </li>
 

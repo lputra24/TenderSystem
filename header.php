@@ -119,9 +119,9 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="createProvinsi.html"><i class="fa fa-circle-o"></i>Create State</a></li>
-            <li><a href="createKota.html"><i class="fa fa-circle-o"></i> Create Area</a></li>
-            <li><a href="viewArea.html"><i class="fa fa-circle-o"></i>View State and Area</a></li>
+            <li><a href="area/createProvinsi.php"><i class="fa fa-circle-o"></i>Create State</a></li>
+            <li><a href="area/createKota.php"><i class="fa fa-circle-o"></i> Create Area</a></li>
+            <li><a href="area/viewArea.php"><i class="fa fa-circle-o"></i>View State and Area</a></li>
           </ul>
         </li>
 
@@ -134,10 +134,10 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="#"><i class="fa fa-circle-o"></i>Create Category</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i> Create Sub-Category</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i>Create Brand</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i>View Category</a></li>
+            <li><a href="category/createCategory.php"><i class="fa fa-circle-o"></i>Create Category</a></li>
+            <li><a href="category/createSub.php"><i class="fa fa-circle-o"></i> Create Sub-Category</a></li>
+            <li><a href="category/createBrand.php"><i class="fa fa-circle-o"></i>Create Brand</a></li>
+            <li><a href="category/viewCategory.php"><i class="fa fa-circle-o"></i>View Category</a></li>
           </ul>
         </li>
 

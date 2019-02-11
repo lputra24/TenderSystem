@@ -92,8 +92,9 @@
 
 
         <div class="form-group">
-          <select class="form-control select2" multiple="multiple" data-placeholder="Provinsi"
+          <select class="form-control select2"
                   style="width: 100%;">
+            <option>--Select Provinsi--</option>
             <option>Alabama</option>
             <option>Alaska</option>
             <option>California</option>
@@ -105,9 +106,9 @@
         </div>
 
         <div class="form-group">
-          <select class="form-control select2" multiple="multiple" data-placeholder="Kota/Kabupaten"
+          <select class="form-control select2"
                   style="width: 100%;">
-            <option>Alabama</option>
+            <option>--Kota/Kabupaten--</option>
             <option>Alaska</option>
             <option>California</option>
             <option>Delaware</option>
@@ -118,9 +119,9 @@
         </div>
 
         <div class="form-group">
-          <select class="form-control select2" multiple="multiple" data-placeholder="Kecamatan"
+          <select class="form-control select2"
                   style="width: 100%;">
-            <option>Alabama</option>
+            <option>--Kecamatan--</option>
             <option>Alaska</option>
             <option>California</option>
             <option>Delaware</option>
