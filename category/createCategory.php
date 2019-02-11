@@ -1,11 +1,11 @@
-<?php include_once "headerProv.php" ?>
+<?php include_once "headerCategory.php" ?>
 
 <div class="content-wrapper">
   <section class="content">
 
     <div class="box box-default">
       <div class="box-header with-border">
-        <h3 class="box-title"><b>Create State</b></h3>
+        <h3 class="box-title"><b>Create Category</b></h3>
 
         <div class="box-tools pull-right">
           <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
@@ -24,16 +24,4 @@
   </section>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-  </section>
-</div>
 <?php include "footer.php" ?>
