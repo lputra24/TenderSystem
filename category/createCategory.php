@@ -17,6 +17,12 @@
           <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Insert Category">
         </div>
       </div>
+      <div class="box-body">
+        <div class="form-group">
+          <label for="exampleInputFile">Image input</label>
+          <input type="file" id="exampleInputFile">
+        </div>
+      </div>
       <div class="box-footer">
         <button type="submit" class="btn btn-primary">Submit</button>
       </div>

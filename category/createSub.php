@@ -1,40 +1,40 @@
-<?php include_once "head.php" ?>
+<?php include_once "headerSub.php" ?>
+
 <div class="content-wrapper">
-  <!-- Content Header (Page header) -->
-  <section class="content-header">
-    <h1>
-      <b>CATEGORY</b>
-      <small>Create Sub-Category</small>
-    </h1>
-    <ol class="breadcrumb">
-      <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-      <li class="active">Dashboard</li>
-    </ol>
-    <!-- <div class="box box-info"> -->
-      <div class="box-header">
+  <section class="content">
 
-        <!-- tools box -->
-        <div class="pull-right box-tools">
+    <div class="box box-default">
+      <div class="box-header with-border">
+        <h3 class="box-title"><b>Create Sub Category</b></h3>
 
+        <div class="box-tools pull-right">
+          <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+          <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-remove"></i></button>
         </div>
-        <!-- /. tools -->
       </div>
       <div class="box-body">
-        <form action="#" method="post">
-          <!-- <div class="form-group">
-            <input type="email" class="form-control" name="emailto" placeholder="">
-          </div> -->
-          <div class="form-group">
-            <input type="text" class="form-control" name="subject" placeholder="">
-          </div>
-
-        </form>
+        <div class="form-group">
+          <label>Select Category</label>
+          <select class="form-control select2" style="width: 100%;">
+            <option selected="selected">--PLEASE SELECT CATEGORY--</option>
+            <option>Susu</option>
+            <option>Obat</option>
+            <option>Snack</option>
+            <option>Makanan</option>
+          </select>
+        </div>
       </div>
-      <!-- <div class="box-footer clearfix"> -->
-        <button type="button" class="pull-right btn btn-default" id="sendat">Send
-          <i class="fa fa-arrow-circle-right"></i></button>
-      <!-- </div> -->
-    <!-- </div> -->
+      <div class="box-body">
+        <div class="form-group">
+          <label>Create Sub Category</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Insert Category">
+        </div>
+      </div>
+      <div class="box-footer">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
   </section>
 </div>
-<?php include_once "headCSub.php" ?>
+
+<?php include "footer.php" ?>
