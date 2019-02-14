@@ -69,8 +69,22 @@
           <!-- small box -->
           <div class="small-box bg-aqua">
             <div class="inner">
-              <h3>40</h3>
+              <h3>
+              <?php
+              $connect = mysqli_connect("localhost", "kevin", "abcdef", "mydb");
 
+              $sql = "SELECT * FROM `administrator`";
+
+              $connStatus = $connect->query($sql);
+
+              $numberOfRows = mysqli_num_rows($connStatus);
+
+              echo $numberOfRows;
+              //this echo out the total number of rows returned from the query
+
+              $connect->close();
+              ?>
+              </h3>
               <p>Admin</p>
             </div>
             <div class="icon">

@@ -10,54 +10,51 @@
           <table id="example1" class="table table-bordered table-striped">
             <thead>
             <tr>
-              <th>First Name</th>
-              <th>Last Name</th>
+              <th>Name</th>
               <th>Email</th>
-              <th>Level</th>
-              <th>Date of Birth</th>
-              <th>Phone Work</th>
-              <th>Phone Fax</th>
               <th>Phone Mobile</th>
+              <th>Level</th>
+              <th>Status</th>
             </tr>
             </thead>
 
             <tbody>
-            <tr>
-              <td>Yohanes</td>
-              <td>Kevin </td>
-              <td>kevin@gmail.com</td>
-              <td>Super</td>
-              <td>30 jan 1998</td>
-              <td>087899556000</td>
-              <td>087899556000</td>
-              <td>087899556000</td>
-            </tr>
-            <tr>
-              <td>sai</td>
-              <td>vudin </td>
-              <td>udin@gmail.com</td>
-              <td>Normal</td>
-              <td>15 Oktober 1998</td>
-              <td>087899557000</td>
-              <td>087899557000</td>
-              <td>087899557000</td>
-            </tr>
-
+              <?php
+              include 'conn.php';
+              $query = "
+              SELECT *
+              FROM administrator
+              WHERE level in('Super','Admin');
+              ";
+              $result = mysqli_query($connect, $query);
+              while($row = mysqli_fetch_array($result))
+              {
+                echo '
+                <tr>
+                <td>'.$row['Name'].'</td>
+                <td>'.$row['Email'].'</td>
+                <td>'.$row['PhoneMobile'].'</td>
+                <td>'.$row['Level'].'</td>
+                <td>'.$row['Status'].'</td>
+                </tr>
+                ';
+              }
+              ?>
             </tbody>
 
             <tfoot>
-            <tr>
-              <th>First Name</th>
-              <th>Last Name</th>
-              <th>Email</th>
-              <th>Level</th>
-              <th>Date of Birth</th>
-              <th>Phone Work</th>
-              <th>Phone Fax</th>
-              <th>Phone Mobile</th>
-            </tr>
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone Mobile</th>
+                <th>Level</th>
+                <th>Status</th>
+              </tr>
             </tfoot>
           </table>
+          <form action="addAdmin.php">
+            <input type="submit" class="btn btn-primary" value="Add Admin" />
+          </form>
         </div>
         <!-- /.box-body -->
       </div>

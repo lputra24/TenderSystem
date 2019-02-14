@@ -1,3 +1,8 @@
+<?php
+session_start();
+if (empty($_SESSION['login_admin'])) {
+  header('location: ../index.php');
+} ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -74,7 +79,7 @@
                   <a href="#" class="btn btn-default btn-flat">Profile</a>
                 </div>
                 <div class="pull-right">
-                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                  <a href="login.php" class="btn btn-default btn-flat">Sign out</a>
                 </div>
               </li>
             </ul>
