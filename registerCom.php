@@ -41,115 +41,112 @@
 
     <form action="index.php" method="post">
 
+      <p class="login-box-msg">--Account--</p>
       <div class="form-group has-feedback">
-        <input type="text" class="form-control" placeholder="Company Name ">
+        <input type="text" class="form-control" placeholder="UserName " required>
         <!-- <span class="glyphicon glyphicon-user form-control-feedback"></span> -->
       </div>
 
       <div class="form-group has-feedback">
-        <input type="text" class="form-control" placeholder="First Name">
+        <input type="password" class="form-control" placeholder="Password"required>
         <!-- <span class="glyphicon glyphicon-envelope form-control-feedback"></span> -->
       </div>
 
       <div class="form-group has-feedback">
-        <input type="text" class="form-control" placeholder="Last Name">
+        <input type="password" class="form-control" placeholder="Confirm Password"required>
         <!-- <span class="glyphicon glyphicon-envelope form-control-feedback"></span> -->
       </div>
 
       <div class="form-group has-feedback">
-        <input type="email" class="form-control" placeholder="Email">
+        <input type="email" class="form-control" placeholder="Email"required>
         <!-- <span class="glyphicon glyphicon-envelope form-control-feedback"></span> -->
       </div>
 
       <div class="form-group has-feedback">
-        <input type="password" class="form-control" placeholder="Password">
+        <input type="text" class="form-control" placeholder="Phone Number"required>
         <!-- <span class="glyphicon glyphicon-lock form-control-feedback"></span> -->
       </div>
-
+        <p class="login-box-msg">--Supplier--</p>
       <div class="form-group has-feedback">
-        <input type="password" class="form-control" placeholder="Retype password">
+        <input type="text" class="form-control" placeholder="Supplier Name"required>
         <!-- <span class="glyphicon glyphicon-log-in form-control-feedback"></span> -->
       </div>
 
       <div class="form-group has-feedback">
-        <input type="text" class="form-control" placeholder="Phone Work">
+        <input type="text" class="form-control" placeholder="Address"required>
+        <!-- <span class="glyphicon glyphicon-envelope form-control-feedback"></span> -->
+      </div>
+
+      <div class="form-group">
+        <select class="form-control select2"
+                style="width: 100%;">
+          <option>--Kota/Kabupaten--</option>
+          <option>Alaska</option>
+          <option>California</option>
+          <option>Delaware</option>
+          <option>Tennessee</option>
+          <option>Texas</option>
+          <option>Washington</option>
+        </select>
+      </div>
+
+      <div class="form-group has-feedback">
+        <input type="text" class="form-control" placeholder="Phone Work"required>
+        <!-- <span class="glyphicon glyphicon-envelope form-control-feedback"></span> -->
+      </div>
+      <p class="login-box-msg">--Pajak--</p>
+      <div class="form-group has-feedback">
+        <input type="text" class="form-control" placeholder="Nama Pajak"required>
         <!-- <span class="glyphicon glyphicon-envelope form-control-feedback"></span> -->
       </div>
 
       <div class="form-group has-feedback">
-        <input type="text" class="form-control" placeholder="Phone Fax">
-        <!-- <span class="glyphicon glyphicon-envelope form-control-feedback"></span> -->
-      </div>
-      <div class="form-group has-feedback">
-        <input type="text" class="form-control" placeholder="Phone Mobile">
+        <input type="text" class="form-control" placeholder="NPWP"required>
         <!-- <span class="glyphicon glyphicon-envelope form-control-feedback"></span> -->
       </div>
 
       <div class="form-group has-feedback">
-        <input type="text" class="form-control"  id = "datepicker" placeholder="mm-dd-yy">
+        <input type="text" class="form-control" placeholder="No SIKA"required>
         <!-- <span class="glyphicon glyphicon-envelope form-control-feedback"></span> -->
       </div>
 
+      <div class="form-group has-feedback">
+        <input type="text" class="form-control" placeholder="No SIUP"required>
+        <!-- <span class="glyphicon glyphicon-envelope form-control-feedback"></span> -->
+      </div>
 
-        <div class="form-group">
-          <select class="form-control select2"
-                  style="width: 100%;">
-            <option>--Select Provinsi--</option>
-            <option>Alabama</option>
-            <option>Alaska</option>
-            <option>California</option>
-            <option>Delaware</option>
-            <option>Tennessee</option>
-            <option>Texas</option>
-            <option>Washington</option>
-          </select>
-        </div>
+      <div class="form-group has-feedback">
+        <input type="text" class="form-control"  id = "datepicker" placeholder="Masa Berlaku SIUP">
+        <!-- <span class="glyphicon glyphicon-envelope form-control-feedback"></span> -->
+      </div>
 
-        <div class="form-group">
-          <select class="form-control select2"
-                  style="width: 100%;">
-            <option>--Kota/Kabupaten--</option>
-            <option>Alaska</option>
-            <option>California</option>
-            <option>Delaware</option>
-            <option>Tennessee</option>
-            <option>Texas</option>
-            <option>Washington</option>
-          </select>
-        </div>
+      <p class="login-box-msg">--PBF&APJ--</p>
 
-        <div class="form-group">
-          <select class="form-control select2"
-                  style="width: 100%;">
-            <option>--Kecamatan--</option>
-            <option>Alaska</option>
-            <option>California</option>
-            <option>Delaware</option>
-            <option>Tennessee</option>
-            <option>Texas</option>
-            <option>Washington</option>
-          </select>
-        </div>
+      <div class="form-group has-feedback">
+        <input type="text" class="form-control" placeholder="Nama PBF"required>
+        <!-- <span class="glyphicon glyphicon-envelope form-control-feedback"></span> -->
+      </div>
 
-        <div class="form-group has-feedback">
-          <input type="text" class="form-control" placeholder="Kode Pos">
-          <!-- <span class="glyphicon glyphicon-envelope form-control-feedback"></span> -->
-        </div>
+      <div class="form-group has-feedback">
+        <input type="text" class="form-control" placeholder="No Ijin PBF"required>
+        <!-- <span class="glyphicon glyphicon-envelope form-control-feedback"></span> -->
+      </div>
 
-        <div class="form-group has-feedback">
-          <input type="text" class="form-control" placeholder="Jalan">
-          <!-- <span class="glyphicon glyphicon-envelope form-control-feedback"></span> -->
-        </div>
+      <div class="form-group has-feedback">
+        <input type="text" class="form-control"  id = "datepicker" placeholder="Masa Berlaku SIUP">
+        <!-- <span class="glyphicon glyphicon-envelope form-control-feedback"></span> -->
+      </div>
 
+      <div class="form-group has-feedback">
+        <input type="text" class="form-control" placeholder="Nama APJ"required>
+        <!-- <span class="glyphicon glyphicon-envelope form-control-feedback"></span> -->
+      </div>
 
+      <div class="form-group has-feedback">
+        <input type="text" class="form-control"  id = "datepicker" placeholder="Masa Berlaku APJ">
+        <!-- <span class="glyphicon glyphicon-envelope form-control-feedback"></span> -->
+      </div>
       <div class="row">
-        <div class="col-xs-8">
-          <div class="checkbox icheck">
-            <label>
-              <input type="checkbox"> I agree to the <a href="#">terms</a>
-            </label>
-          </div>
-        </div>
         <!-- /.col -->
         <div class="col-xs-4">
           <button type="submit" class="btn btn-primary btn-block btn-flat">Register</button>
@@ -158,13 +155,6 @@
       </div>
     </form>
 
-    <div class="social-auth-links text-center">
-      <p>- OR -</p>
-      <a href="https://www.facebook.com/" class="btn btn-block btn-social btn-facebook btn-flat"><i class="fa fa-facebook"></i> Sign up using
-        Facebook</a>
-      <a href="https://accounts.google.com/signin/v2/identifier?hl=id&passive=true&continue=https%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3Dgmail%26oq%3Dgmail%26aqs%3Dchrome..69i57j69i60.2374j0j4%26sourceid%3Dchrome%26ie%3DUTF-8&flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="btn btn-block btn-social btn-google btn-flat"><i class="fa fa-google-plus"></i> Sign up using
-        Google+</a>
-    </div>
 
     <a href="login.php" class="text-center">I already have a membership</a>
   </div>

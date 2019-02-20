@@ -1,4 +1,4 @@
-<?php include_once "headerView.php" ?>
+<?php include_once "head.php" ?>
 <div class="content-wrapper">
   <!-- Content Header (Page header) -->
   <section class="content-header">
@@ -13,4 +13,4 @@
 
   </section>
 </div>
-<?php include_once "footer.php" ?>
+<?php include_once "headVC.php" ?>
