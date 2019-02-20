@@ -1,9 +1,14 @@
+<?php
+session_start();
+if (empty($_SESSION['login_admin'])) {
+  header('location: ../dashboard.php');
+} ?>
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Tri Sapta Jaya</title>
+  <title>MOSPRO</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -48,45 +53,72 @@
   <header class="main-header">
     <!-- Logo -->
     <a href="../dashboard.php" class="logo">
-      <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>TSJ</b></span>
-      <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>Tri Sapta Jaya</b></span>
+      <span class="logo-lg"><b>MOSPRO</b></span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
-      <!-- Sidebar toggle button-->
-      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
-        <span class="sr-only">Toggle navigation</span>
-      </a>
 
       <div class="navbar-custom-menu">
         <ul class="nav navbar-nav">
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <a href="#"  class="dropdown-toggle" data-toggle="dropdown">
               <!-- <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image"> -->
-              <span class="hidden-xs">Kevin</span>
+              <span >
+
+                <?php
+                include '../connection/conn.php';
+                $query = "SELECT*FROM administrator WHERE Email='$_SESSION[login_admin]'";
+
+                $result = $connect->query($query);
+
+                $row = mysqli_fetch_array($result);
+                // echo var_dump($row);
+
+                echo $row[3];
+                 ?>
+
+              </span>
+
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header">
+              <img src="../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                <p><?php
+                include '../connection/conn.php';
+                $query = "SELECT*FROM administrator WHERE Email='$_SESSION[login_admin]'";
+
+                $result = $connect->query($query);
+
+                $row = mysqli_fetch_array($result);
+                // echo var_dump($row);
+
+                echo $row[3];
+                 ?>
+                  <small><?php
+                  include '../connection/conn.php';
+                  $query = "SELECT*FROM administrator WHERE Email='$_SESSION[login_admin]'";
+
+                  $result = $connect->query($query);
+
+                  $row = mysqli_fetch_array($result);
+                  // echo var_dump($row);
+
+                  echo $row['Email'];
+                   ?></small>
+                </p>
               </li>
               <!-- Menu Footer-->
               <li class="user-footer">
                 <div class="pull-left">
-                  <a href="#" class="btn btn-default btn-flat">Profile</a>
+                  <a href="profileAdmin/profile.php" class="btn btn-default btn-flat">Profile</a>
                 </div>
                 <div class="pull-right">
-                  <a href="login.php" class="btn btn-default btn-flat">Sign out</a>
+                  <a href="logout.php" class="btn btn-default btn-flat">Sign out</a>
                 </div>
               </li>
             </ul>
-          </li>
-          <!-- Control Sidebar Toggle Button -->
-          <li>
-            <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
-          </li>
         </ul>
       </div>
     </nav>
@@ -229,7 +261,7 @@
           <!-- small box -->
           <div class="small-box bg-yellow">
             <div class="inner">
-              <h3>150</h3>
+                <h3>150</h3>
 
               <p>Request</p>
             </div>
@@ -244,7 +276,20 @@
           <!-- small box -->
           <div class="small-box bg-green">
             <div class="inner">
-              <h3>50</h3>
+              <h3><?php
+              $connect = mysqli_connect("localhost", "kevin", "abcdef", "mydb");
+
+              $sql = "SELECT * FROM `company`";
+
+              $connStatus = $connect->query($sql);
+
+              $numberOfRows = mysqli_num_rows($connStatus);
+
+              echo $numberOfRows;
+              //this echo out the total number of rows returned from the query
+
+              $connect->close();
+              ?></h3>
 
               <p>Company</p>
             </div>
@@ -260,7 +305,20 @@
           <!-- small box -->
           <div class="small-box bg-red">
             <div class="inner">
-              <h3>65</h3>
+              <h3><?php
+              $connect = mysqli_connect("localhost", "kevin", "abcdef", "mydb");
+
+              $sql = "SELECT * FROM `supplier`";
+
+              $connStatus = $connect->query($sql);
+
+              $numberOfRows = mysqli_num_rows($connStatus);
+
+              echo $numberOfRows;
+              //this echo out the total number of rows returned from the query
+
+              $connect->close();
+              ?></h3>
 
               <p>Supplier</p>
             </div>
@@ -275,7 +333,22 @@
           <!-- small box -->
           <div class="small-box bg-aqua">
             <div class="inner">
-              <h3>40</h3>
+              <h3>
+                <?php
+                $connect = mysqli_connect("localhost", "kevin", "abcdef", "mydb");
+
+                $sql = "SELECT * FROM `administrator`";
+
+                $connStatus = $connect->query($sql);
+
+                $numberOfRows = mysqli_num_rows($connStatus);
+
+                echo $numberOfRows;
+                //this echo out the total number of rows returned from the query
+
+                $connect->close();
+                ?>
+              </h3>
 
               <p>Admin</p>
             </div>

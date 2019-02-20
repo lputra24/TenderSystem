@@ -38,7 +38,21 @@
           <!-- small box -->
           <div class="small-box bg-green">
             <div class="inner">
-              <h3>50</h3>
+              <h3>
+                <?php
+                $connect = mysqli_connect("localhost", "kevin", "abcdef", "mydb");
+
+                $sql = "SELECT * FROM `company`";
+
+                $connStatus = $connect->query($sql);
+
+                $numberOfRows = mysqli_num_rows($connStatus);
+
+                echo $numberOfRows;
+                //this echo out the total number of rows returned from the query
+
+                $connect->close();
+                ?></h3>
 
               <p>Company</p>
             </div>
@@ -54,7 +68,20 @@
           <!-- small box -->
           <div class="small-box bg-red">
             <div class="inner">
-              <h3>65</h3>
+              <h3><?php
+              $connect = mysqli_connect("localhost", "kevin", "abcdef", "mydb");
+
+              $sql = "SELECT * FROM `supplier`";
+
+              $connStatus = $connect->query($sql);
+
+              $numberOfRows = mysqli_num_rows($connStatus);
+
+              echo $numberOfRows;
+              //this echo out the total number of rows returned from the query
+
+              $connect->close();
+              ?></h3>
 
               <p>Supplier</p>
             </div>

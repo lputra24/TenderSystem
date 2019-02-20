@@ -54,3 +54,37 @@ function test_input($data) {
 
 
  ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <li class="dropdown user user-menu">
+   <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+     <!-- <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image"> -->
+     <?php echo $_SESSION['Name'] ?>
+   </a>
+   <ul class="dropdown-menu">
+     <!-- User image -->
+     <li class="user-header">
+     </li>
+     <!-- Menu Footer-->
+     <li class="user-footer">
+       <div class="pull-left">
+         <a href="#" class="btn btn-default btn-flat">Profile</a>
+       </div>
+       <div class="pull-right">
+         <a href="login.php" class="btn btn-default btn-flat">Sign out</a>
+       </div>
+     </li>
+   </ul>
+ </li>
